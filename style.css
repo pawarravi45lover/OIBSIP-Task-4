@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: bold 14px Arial, sans-serif;
+}
+
+html {
+    height: 100%;
+    background: linear-gradient(to right, #02090a, #2193b0);
+    background-size: cover;
+}
+
+#calculator {
+    width: 350px;
+    padding: 20px;
+    margin: 100px auto;
+    background: #721e1e;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(225, 215, 215, 0.3);
+}
+
+#screen {
+    height: 60px;
+    background: #130909;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.keys span {
+    width: 75px;
+    height: 60px;
+    margin: 10px;
+    background: #fff;
+    color: #333;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.keys span.operator {
+    background: #ffab91;
+}
+
+.keys span.advanced {
+    background: #e57373;
+    color: white;
+}
+
+.keys span.eval {
+    background: #4caf50;
+    color: white;
+}
+
+.keys span:hover {
+    background: #7986cb;
+    color: white;
+    box-shadow: 0px 6px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.keys span:active {
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
+
+#clear {
+    width: 100%;
+    height: 50px;
+    background: #f44336;
+    color: white;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+#clear:hover {
+    background: #d32f2f;
+}
